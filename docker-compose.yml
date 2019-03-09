@@ -1,0 +1,12 @@
+version: '3'
+
+services: 
+  nodejs:
+    image: node
+    ports: 
+      - 8080:8080
+    working_dir: /usr/app
+    volumes: 
+      - ./:/usr/app
+    command: bash -c "npm install"
+    command: npm start

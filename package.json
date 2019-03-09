@@ -1,0 +1,10 @@
+{
+    "name": "start-nodejs-with-docker",
+    "version": "0.1.1",
+    "description": "create nodejs app with docker",
+    "main": "index.js",
+    "scripts": {
+      "start": "node ./index.js"
+    },
+    "license": "MIT"
+  }
