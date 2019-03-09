@@ -1,18 +1,16 @@
-const express = require('express')
+'use strict';
 
-// nilai constant untuk port & host
-const PORT = 8080
-const HOST = '0.0.0.0'
+const express = require('express');
 
-// variabel app yang mereferensi ke express
-const app = express()
+// Constants
+const PORT = 8080;
+const HOST = '0.0.0.0';
 
-// route public `/` yang mengembalikan respons string `Hello World`
+// App
+const app = express();
 app.get('/', (req, res) => {
-  res.send('Hello World')
-})
+  res.send('Hello world\n');
+});
 
-// listen untuk menjalakan express
-app.listen(PORT, HOST, () => {
-  console.log(`Running on http://${HOST}:${PORT}`)
-})
+app.listen(PORT, HOST);
+console.log(`Running on http://${HOST}:${PORT}`);
