@@ -3,6 +3,7 @@ version: '3'
 services: 
   nodejs:
     image: node
+    restart: on-failure
     working_dir: /usr/app
     ports: 
       - 8080:8080
